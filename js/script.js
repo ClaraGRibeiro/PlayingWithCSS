@@ -58,7 +58,7 @@ function next(){
 }
 function panelSlides(number){
     slideCount = number;
-    slideFile = '../slides/slide' + number + '.html';
+    slideFile = 'slides/slide' + number + '.html';
     previousButton = (`
         <img src="img/next.svg" alt="previous image" id="previous" title="previous" onclick="previous()">
         <div class="elements">
