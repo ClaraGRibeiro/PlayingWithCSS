@@ -17,7 +17,7 @@ function loadHeader(pageName) {
         <p class="code">&lt;${pageName}&gt;</p>
         <nav class="buttons">
             <img class="button" src="img/home.svg" alt="home image" onclick="window.open('index.html', '_self')" title="Home">
-            <img class="button" src="img/code.svg" alt="code image" onclick="window.open('https://github.com/ClaraGRibeiro', '_blank')" title="Code"><!--COLOCAR LINK DO GITHUB-->
+            <img class="button" src="img/code.svg" alt="code image" onclick="window.open('https://github.com/ClaraGRibeiro/PlayingWithCSS', '_blank')" title="Code"><!--COLOCAR LINK DO GITHUB-->
             <img class="button" src="img/about.svg" alt="about image" onclick="window.open('about.html', '_self')" title="About">
         </nav>
     `);
