@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-size: 100%;    
+    font-weight: 500;
+    font-family: "Imprima", sans-serif;
+}
+::selection{
+    color: #4C1711; 
+    background-color: #FCDFE4;
+}
+.header, .footer{
+    height: 80px;
+    padding: 20px;
+    font-size: 30px;
+    background-color: #4C1711;
+    color: #EBE7E4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.button, .red, .green, .blue, .default, #previous, #next{
+    transition: 0.5s;
+}
+.button:hover, .red:hover, .green:hover, .blue:hover, .default:hover, .list-item:hover, #previous:hover, #next:hover{
+    cursor: pointer;
+    opacity: 70%;
+    transition: 0.3s;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.main{
+    padding: 20px;
+    background-color: #EBE7E4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    border-bottom: 10px dashed #564740;
+}
+#pointer-img{
+    position: absolute;
+    right: 0;
+    bottom: calc(50% - 139px);
+}
+.main h1, .content-text, .table-of-links{
+    margin: 20px;
+    color: #564740;
+    font-size: 80px;
+    font-weight: 500;
+}
+.content-text{
+    text-align: center;
+    line-height: 150%;
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+}
+#detail{
+    color: #AA6F73;
+    font-weight: 600;
+}
+#detail-dark{
+    color: #4C1711;
+    font-weight: 600;
+}
+.table-of-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AA6F73;
+    padding: 20px 80px;
+    gap: 80px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 24px;
+}
+.list{
+    text-align: center;
+    color: #EBE7E4;
+}
+.list-item{
+    margin: 20px 0;
+}
+
+
+.panel{
+    height: 500px;
+    color: #EBE7E4;
+    padding: 60px;
+    background-color: #564740;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+.elements{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+.query{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.red, .green, .blue, .default{
+    border-radius: 30px;
+    border: #4C1711 1px solid;
+    color: #4C1711;
+    padding: 20px 40px;
+}
+.red{
+    background-color: #FF6961;
+}
+.green{
+    background-color: #B2FBA5;
+}
+.blue{
+    background-color: #A2BFFE;
+}
+.default{
+    background-color: #EBE7E4;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    border: #EBE7E4 1px solid;
+    background-color: #4C1711;
+}
+#next, .rotate{
+    transform: rotate(180deg);
+}
+
+.warning{
+    text-align: center;
+    color: #EBE7E4;
+    padding: 60px;
+    background-color: #AA6F73;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+    position: relative;
+    
+    border-top: #EBE7E4 dotted 10px;
+    border-bottom: #EBE7E4 dotted 10px;
+}
+.warning h2{
+    margin: 20px;
+    margin-bottom: 60px;
+    color: #EBE7E4;
+    font-size: 100px;
+    font-weight: 500;
+}
+.warning p{
+    margin: 20px;
+    color: #EBE7E4;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 190%;
+}
+.code{
+    font-family: "Fira Code", monospace;
+    font-weight: 100;
+}
+#start{
+    color: #4C1711;
+    background-color: #AA6F73;
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 10px 0 0 #4C1711;
+    transition: 0.3s;
+}
+#start:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    color: #EBE7E4;
+    background-color: #4C1711;
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: -10px 0 0 #EBE7E4;
+    transform: translateX(30px);
+}
+
+
+
+
+.about-project{
+    padding: 20px;
+    background-color: #EBE7E4;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.about-project h1, .content-text-about-project{
+    margin: 20px;
+    color: #564740;
+    font-size: 80px;
+    font-weight: 500;
+}
+.content-text-about-project{
+    width: 1000px;
+    line-height: 150%;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.right-part{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+
+
+
+
+.curiosity{
+    background-color: #4C1711;
+    padding: 40px 0;
+    color: #EBE7E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+    border-top: #EBE7E4 dotted 10px;
+}
+.curiosity h3{
+    font-size: 80px;
+    font-weight: 500;
+}
+.curiosity p{
+    width: 800px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+
+
+.about-me{
+    background-color: #AA6F73;
+    padding: 40px 100px;
+    color: #EBE7E4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-top: #4C1711 dashed 10px;
+    border-bottom: #4C1711 dashed 10px;
+}
+.content-left{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+.title h2{
+    font-weight: 100;
+    font-size: 80px;
+}
+.content-text-about-me{
+    font-size: 30px;
+    width: 800px;
+}
+.me-right{
+    display: flex;
+    align-items: end;
+    gap: 40px;
+    flex-direction: column;
+}
+.cute-detail{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    font-size: 30px;
+}
