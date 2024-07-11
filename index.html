@@ -7,7 +7,7 @@
     <link rel="icon" href="img/icon.svg" type="image/svg">
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/cc9f72a45c.js" crossorigin="anonymous"></script>
-    <base href="https://claragribeiro.github.io/PlayingWithCSS/">
+    <!--<base href="https://claragribeiro.github.io/PlayingWithCSS/">-->
     <title>Playing With CSS</title>
 </head>
 <body onload="loadElementsHome()">
@@ -22,24 +22,24 @@
             </p>
             <div class="table-of-links">
                 <ul class="list">
-                    <li class="list-item"><span class="code">color</span></li>
-                    <li class="list-item"><span class="code">background-color</span></li>
-                    <li class="list-item"><span class="code">font-style</span></li>
-                    <li class="list-item"><span class="code">font-size</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(1)">color</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(2)">background-color</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(3)">font-style</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(4)">font-size</span></li>
                 </ul>
                 <img src="img/lines.svg" alt="lines image" class="lines">
                 <ul class="list">
-                    <li class="list-item"><span class="code">text-decoration</span></li>
-                    <li class="list-item"><span class="code">border</span></li>
-                    <li class="list-item"><span class="code">opacity</span></li>
-                    <li class="list-item"><span class="code">flex-box</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(5)">text-decoration</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(6)">border</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(0)">border-radius</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(0)">opacity</span></li>
                 </ul>
                 <img src="img/lines.svg" alt="lines image" class="lines">
                 <ul class="list">
-                    <li class="list-item"><span class="code">flex-box</span></li>
-                    <li class="list-item"><span class="code">align-itens</span></li>
-                    <li class="list-item"><span class="code">justify-content</span></li>
-                    <li class="list-item"><span class="code">width</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(0)">flex-box</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(0)">align-itens</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(0)">justify-content</span></li>
+                    <li class="list-item"><span class="code" onclick="panelSlides(0)">width</span></li>
                 </ul>
             </div>
             <img src="img/pointer.svg" alt="pointer image" id="pointer-img">

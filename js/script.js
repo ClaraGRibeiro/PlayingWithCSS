@@ -7,6 +7,7 @@ function loadElementsAbout(){
     loadHeader("about");
     loadFooter("about");
 }
+totalSlide = 6;
 
 function loadHeader(pageName) {
     document.getElementById('header-place').innerHTML = (`
@@ -39,7 +40,6 @@ function loadFooter(pageName) {
 
 
 slideCount = 0;
-totalSlide = 4;
 function previous(){
     if(slideCount > 1){
         slideCount--;
@@ -112,3 +112,14 @@ function font_style(font_styleChange){
 function font_size(font_sizeChange){
     document.getElementById('change').style.fontSize = (font_sizeChange);
 }
+
+//SLIDE4
+function text_decoration(text_decorationChange){
+    document.getElementById('change').style.textDecoration = (text_decorationChange);
+}
+
+//SLIDE5
+function border(borderChange){
+    document.getElementById('change').style.border = (borderChange);
+}
+

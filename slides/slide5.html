@@ -1,0 +1,29 @@
+<div class="query">
+    <div class="code">text-decoration:</div>
+    <nav class="buttons">
+        <div class="default" onclick="text_decoration('underline #FF6961')">
+            <p><span class="code">underline red</span></p>
+        </div>
+        <p><span class="code">/</span></p>
+        <div class="default" onclick="text_decoration('line-through dotted')">
+            <p><span class="code">line-through dotted</span></p>
+        </div>
+        <p><span class="code">/</span></p>
+        <div class="default" onclick="text_decoration('overline wavy')">
+            <p><span class="code">overline wavy</span></p>
+        </div>
+        <p><span class="code">/</span></p>
+        <div class="default" onclick="text_decoration('none')">
+            <p><span class="code">default</span></p>
+        </div>
+    </nav>
+    <div class="code">;</div>
+</div>
+<div class="result" id="change">
+    <p class="code">example text.</p>
+</div>
+<style>
+    .buttons{
+        font-size: smaller;
+    }
+</style>
