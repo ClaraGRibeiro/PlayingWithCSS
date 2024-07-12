@@ -7,7 +7,7 @@ function loadElementsAbout(){
     loadHeader("about");
     loadFooter("about");
 }
-totalSlide = 6;
+totalSlide = 7;
 
 function loadHeader(pageName) {
     document.getElementById('header-place').innerHTML = (`
@@ -78,7 +78,7 @@ function panelSlides(number){
             if(slideCount == 0){
                 document.getElementById('slide').innerHTML = html;
             } else{
-            document.getElementById('slide').innerHTML = previousButton + html + nextButton;
+                document.getElementById('slide').innerHTML = previousButton + html + nextButton;
             }
         })
         .catch(error => {
@@ -113,13 +113,18 @@ function font_size(font_sizeChange){
     document.getElementById('change').style.fontSize = (font_sizeChange);
 }
 
-//SLIDE4
+//SLIDE5
 function text_decoration(text_decorationChange){
     document.getElementById('change').style.textDecoration = (text_decorationChange);
 }
 
-//SLIDE5
+//SLIDE6
 function border(borderChange){
     document.getElementById('change').style.border = (borderChange);
+}
+
+//SLIDE7
+function border_radius(border_radiusChange){
+    document.getElementById('change').style.borderRadius = (border_radiusChange);
 }
 

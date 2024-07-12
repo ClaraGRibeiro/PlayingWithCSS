@@ -15,6 +15,7 @@
 
 
 *{
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -87,7 +88,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     bottom: calc(50% - 139px);
 }
-.main h1, .content-text, .table-of-links{
+.main h1, .content-text, #table-of-links{
     margin: 20px;
     color: #564740;
     font-size: 80px;
@@ -107,7 +108,7 @@ body::-webkit-scrollbar-thumb {
     color: #4C1711;
     font-weight: 600;
 }
-.table-of-links{
+#table-of-links{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,17 +119,19 @@ body::-webkit-scrollbar-thumb {
     border-top-right-radius: 30px;
     font-size: 24px;
 }
-.list{
+.list, .list a{
     text-align: center;
     color: #EBE7E4;
 }
-.list-item{
+.list-item{    
+    font-family: "Fira Code", monospace;
+    font-weight: 100;
     margin: 20px 0;
 }
 
 
 .panel{
-    height: 500px;
+    height: 600px;
     color: #EBE7E4;
     padding: 60px;
     background-color: #564740;
@@ -219,21 +222,28 @@ body::-webkit-scrollbar-thumb {
     background-color: #AA6F73;
     padding: 20px 40px;
     border-radius: 30px;
-    box-shadow: 10px 0 0 #4C1711;
     transition: 0.3s;
+    animation: moving 0.8s infinite alternate;
 }
 #start:hover{
     cursor: pointer;
     transition: 0.3s;
     color: #EBE7E4;
     background-color: #4C1711;
-    padding: 20px 40px;
-    border-radius: 30px;
-    box-shadow: -10px 0 0 #EBE7E4;
-    transform: translateX(30px);
+    animation: movingHover 0.8s infinite alternate;
 }
-
-
+@keyframes moving{
+    100%{
+        transform: translateX(40px);
+        box-shadow: -10px 0 0 #4C1711;
+    }
+}
+@keyframes movingHover{
+    100%{
+        transform: translateX(40px);
+        box-shadow: -10px 0 0 #EBE7E4;
+    }
+}
 
 .about-project{
     padding: 20px;
