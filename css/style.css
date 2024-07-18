@@ -170,6 +170,7 @@ body::-webkit-scrollbar-thumb {
 }
 .default{
     background-color: #EBE7E4;
+    display: flex;
 }
 .result{
     display: flex;

@@ -1,0 +1,31 @@
+<div class="query">
+    <div class="code">align-itens:</div>
+    <nav class="buttons">
+        <div class="default" onclick="align_itens('start')">
+            <p><span class="code">start</span></p>
+        </div>
+        <p><span class="code">/</span></p>
+        <div class="default" onclick="align_itens('end')">
+            <p><span class="code">end</span></p>
+        </div>
+        <p><span class="code">/</span></p>
+        <div class="default" onclick="align_itens('stretch')">
+            <p><span class="code">stretch</span></p>
+        </div>
+        <p><span class="code">/</span></p>
+        <div class="default" onclick="align_itens('center')">
+            <img src="/img/default.svg" alt="default">
+        </div>
+    </nav>
+    <div class="code">;</div>
+</div>
+<div class="result" id="change">
+    <div class="red">1</div>
+    <div class="green">2</div>
+    <div class="blue">3</div>
+</div>
+<style>
+    .result{
+        height: 200px;
+    }
+</style>

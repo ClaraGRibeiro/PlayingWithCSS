@@ -7,7 +7,7 @@ function loadElementsAbout(){
     loadHeader("about");
     loadFooter("about");
 }
-totalSlide = 7;
+totalSlide = 12;
 
 function loadHeader(pageName) {
     document.getElementById('header-place').innerHTML = (`
@@ -128,3 +128,27 @@ function border_radius(border_radiusChange){
     document.getElementById('change').style.borderRadius = (border_radiusChange);
 }
 
+//SLIDE8
+function opacity(opacityChange){
+    document.getElementById('change').style.opacity = (opacityChange);
+}
+
+//SLIDE9
+function width(widthChange){
+    document.getElementById('change').style.width = (widthChange);
+}
+
+//SLIDE10
+function justify_content(justify_contentChange){
+    document.getElementById('change').style.justifyContent = (justify_contentChange);
+}
+
+//SLIDE11
+function align_itens(align_itensChange){
+    document.getElementById('change').style.alignItems = (align_itensChange);
+}
+
+//SLIDE12
+function gap(gapChange){
+    document.getElementById('change').style.gap = (gapChange);
+}
